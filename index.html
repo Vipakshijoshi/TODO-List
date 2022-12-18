@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>to-do-list</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Arvo&family=Festive&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,500;1,600&family=Lobster&family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Nunito:wght@600&family=Ramaraja&family=Redressed&family=Roboto+Slab:wght@100;200;300;400;500;600;700&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <main class="app">
+        <section class="greeting">
+            <h2 class="title">What's up,<input type="text" id="name" placeholder="NAME HERE"></h2>
+        </section>
+        <section class="create-todo">
+            <h3>Create Todo</h3>
+            <form id ="new-todo-form">
+                <h4>What's on your todo list</h4>
+                <input type="text" name="content" id="content" placeholder="e.g drink water">
+
+                <h4>Pick a category</h4>
+                <div class="options">
+                    <label class="personal">
+                        <input type="radio" name="category" id="category" value="business">
+                        <span></span>
+                        <div>Business</div>
+                    </label>
+                    <label class="business"> 
+                        <input type="radio" name="category2" id="category2" value="personal">
+                        <span ></span>
+                        <div>Personal</div>
+                    </label>
+                </div>
+                <input type="submit" value="add todo">
+
+            </form>
+        </section>
+
+        <section class="todo-list">
+            <h3>TODO-List</h3>
+        <div class="list" id="todo-list">
+            <!--<div class="todo-item done">
+                   
+                <div class="todo-content">
+                    <input type="text" value="Drink water" readonly>
+
+                </div>
+                <div class="actions">
+                    <button class="edit">Edit</button>
+                    <button class="delete">Delete</button>
+                </div>
+            </div>
+            </div>
+            <div class="todo-item done">
+               
+            
+            <div class="todo-content">
+                <input type="text" value="Drink water" readonly>
+
+            </div> 
+            <div class="actions">
+                <button class="edit">Edit</button>
+                <button class="delete">Delete</button>
+            </div>
+        </div>!-->
+        
+
+        </section>
+    </main>
+
+    <script src="maincpy.js"></script>
+</body>
+</html>
